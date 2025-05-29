@@ -1,0 +1,97 @@
+.topbar {
+
+overflow-x: hidden;
+  color: white;
+
+}
+
+#navbar {
+  position: fixed;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100px;
+flex-wrap: wrap;
+  background-color: #222831;
+  z-index: 1;
+}
+
+#link1, #link2, #link3, #link4,#link5 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px; /* Adjust font size */
+  padding: 10px;
+  transition: all 0.3s ease; /* Smooth transition for hover and click effects */
+  border-radius: 5px;
+}
+
+#link1:hover, #link2:hover, #link3:hover, #link4:hover,#link5:hover {
+  background-color: #393e46;
+  transform: scale(1.1); 
+}
+
+#link1.active, #link2.active, #link3.active, #link4.active {
+  border: 2px solid #00adb5; 
+  background-color: #00adb5;
+  color: #222831;
+}
+
+#link1:focus, #link2:focus, #link3:focus, #link4:focus {
+  outline: none;
+}
+@media (max-width:1200px) {
+  #navbar{
+    height: auto;
+  }
+  
+}
+#pop{
+  display: none;
+  position: relative;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 500px;
+  background-color: white;
+  color: green;
+  border: 4px solid green;
+  margin-left: 50%;
+  margin-top: 10%;
+  margin-bottom: 20%;
+}
+#tick{
+  font-size: 50px;
+  animation: tick 1s linear;
+}
+@keyframes tick {
+  0%{
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  100%{
+    transform: rotate(-360deg);
+    opacity: 1;
+  }
+  
+}
+#ok{
+  height: 50px;
+  width: 100px;
+  font-size: 20px;
+  background-color: blue;
+  color: white;
+  border-radius: 7px;
+  border: none;
+  
+}
+#ok:hover{
+  background-color: rgb(3, 3, 172);
+}

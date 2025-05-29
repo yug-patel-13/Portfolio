@@ -1,0 +1,102 @@
+
+
+#Skills {
+    display: flex;
+   justify-content: space-around;
+   justify-content: center;
+    
+        height: calc(100vh - 100px);
+        background-color: #352F44;
+        color: white;
+        padding-top: 100px; /* Ensures content is not hidden behind the navbar */
+        overflow-x:scroll;
+        flex-wrap: wrap;
+      }
+      #photos{
+        display: flex;
+       
+        flex-direction: column;
+        flex-wrap: wrap;
+    
+      }
+      .ph1{
+        height: 100px;
+       
+        
+      }
+      .collab1{
+        display: flex;
+       margin-top: 80px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+      .collab2{
+        display: flex;
+       margin-top: 100px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+      .collab3{
+        display: flex;
+        margin-top: 100px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+      .p1,.p2,.p3{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 200px;
+        width: 300px;
+       
+      }
+      p1:hover{
+        background-color: white;
+      }
+#next{
+  position: relative;
+  top: 40%;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+
+
+  
+}
+#back{
+  position: relative;
+  left: -100px;
+  top: 200px;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+
+}
+#next:hover{
+  box-shadow: 5px 5px 50px white;
+}
+#back:hover{
+  box-shadow: 5px 5px 50px white;
+}
+.next2{
+  display: flex;
+margin: 20px;
+
+}
+#chess{
+  
+  width: 200px;
+}
+@media (max-width) {
+
+  .p1,.p2,.p3{
+    height: 200px;
+    width: 300px;
+  }
+
+}

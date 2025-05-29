@@ -1,0 +1,239 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #102C57;
+  color: white;
+}
+
+#About {
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #102C57;
+  overflow-x: scroll;
+  color: white;
+  min-height: calc(100vh - 100px);
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+#photo {
+
+  height: 300px;
+  width: 300px;
+  background-image: url("myphoto.jpeg");
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+#ten, #twelve, #clg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 250px;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#ten {
+  width: 400px;
+}
+
+#twelve {
+  width: 400px;
+}
+
+#clg {
+  width: 600px;
+}
+
+#ten:hover, #twelve:hover, #clg:hover {
+  box-shadow: 5px 5px 50px black;
+}
+
+#hello {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+#main {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 50px;
+  flex-wrap: wrap;
+}
+
+#deve {
+  margin-left: 10px;
+  margin-top: 40px;
+}
+
+#name {
+  font-size: 70px;
+  color: yellow;
+}
+
+#pass {
+  font-size: 40px;
+  margin-top: -10px;
+  font-family: monospace;
+  overflow: hidden;
+  border-right: .1em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 5s steps(30, end) infinite, blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: orange; }
+}
+
+#res1, #res2, #res3 {
+  height: 1000px;
+  width: 100%;
+}
+
+.open-link {
+  color: white;
+  text-decoration: none;
+}
+
+#slide {
+  position: relative;
+  left: 38%;
+  animation: slide 0.5s infinite;
+  margin-top: 10px;
+}
+
+@keyframes slide {
+  0% { color: yellow; }
+  100% { color: red; }
+}
+
+#info {
+  height: 1000px;
+  width: 1500px;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 1200px) {
+  #clg {
+    width: 300px; /* Adjust width for medium-sized screens */
+    height: 250px;
+  }
+}
+
+@media (max-width: 992px) {
+  #ten, #twelve {
+    width: 300px; /* Adjust width for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  #photo {
+    height: 200px;
+    width: 200px; /* Adjust photo size for smaller screens */
+    margin-top: 170px;
+  }
+  #ten, #twelve, #clg {
+    height: 300px; /* Adjust height for smaller screens */
+  }
+  #name {
+    font-size: 50px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  #name {
+    font-size: 40px; /* Further adjust font size for mobile screens */
+  }
+  #pass {
+    font-size: 30px; /* Further adjust font size for mobile screens */
+  }
+}
+@media(max-width:200px) {
+  #deve{
+margin-top: 10px;
+  }
+}
+
+#abt-me {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 25px;
+  max-width: 600px;
+  color: white;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+margin-top: -250px;
+}
+@media (max-width:1200px) {
+
+  #abt-me{
+    margin-top: 700px;
+  }
+  
+}
+
+#abt-me h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+ 
+}
+
+#abt-me p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+#abt-me ul {
+  list-style: none;
+  padding: 0;
+}
+
+#abt-me li {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+#abt-me li:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.4);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
